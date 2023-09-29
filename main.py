@@ -44,7 +44,7 @@ while True:
             cv2.putText(frame, 'Not Jumping', (420,460), cv2.FONT_HERSHEY_COMPLEX, 1, (255,255,255), 1, cv2.LINE_AA)
         if not keyPressed and len(current_key_pressed) != 0:
             for key in current_key_pressed:
-                ReleaseKey(key)
+                             ReleaseKey(key)
             current_key_pressed = set()
         if fingerUp==[0,0,0,0,0]:
             cv2.putText(frame, 'Finger Count: 0', (20,460), cv2.FONT_HERSHEY_COMPLEX, 1, (255,255,255), 1, cv2.LINE_AA)
